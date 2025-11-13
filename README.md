@@ -2,7 +2,7 @@
 **Web Programmer**
 
 **Email:** mohammadjavad2903@gmail.com | **Mobile:** (+98) 9150567825 | **Address:** Khorasan Razavi, Mashhad, Abdolmotalleb  
-**Birth Date:** 1380/8/13 | **Marital Status:** Single | **Military Status:** Student exemption
+**Birth Date:** November 4, 2001 | **Marital Status:** Single
 
 ## Professional Summary
 Web programmer with five years of experience in development and optimization of PHP and Laravel-based systems. Specialist in implementing Docker and Linux infrastructure. Effective team player, familiar with Scrum methodology and deep understanding of organizational culture. Always seeking new opportunities to learn and apply new technologies.
@@ -14,13 +14,17 @@ Web programmer with five years of experience in development and optimization of 
 - jQuery
 - WHMCS
 - MySQL
+- PostgreSQL
 - Bootstrap
 - RESTful Web Service Design
 - Docker
 - Python
+- Flask
 - Redis
 - Memcached
 - Vue.js
+- React.js
+- Next.js
 
 ## Work Experience
 
