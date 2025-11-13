@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Javad Azimi - Resume</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.4; color: #333; }
+        h1 { text-align: center; color: #2c3e50; }
+        h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        h3 { color: #2c3e50; margin-top: 20px; }
+        ul { list-style-type: disc; padding-left: 20px; }
+        .contact { text-align: center; font-size: 14px; margin-bottom: 20px; }
+        em { font-style: italic; color: #7f8c8d; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Mohammad Javad Azimi</h1>
+    <p style="text-align: center; font-weight: bold; margin-bottom: 10px;">Web Programmer</p>
+    <div class="contact">
+        <strong>Email:</strong> mohammadjavad2903@gmail.com | <strong>Mobile:</strong> (+98) 9150567825 | <strong>Address:</strong> Khorasan Razavi, Mashhad, Abdolmotalleb<br>
+        <strong>Birth Date:</strong> 1380/8/13 | <strong>Marital Status:</strong> Single | <strong>Military Status:</strong> Student exemption
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p>Web programmer with five years of experience in development and optimization of PHP and Laravel-based systems. Specialist in implementing Docker and Linux infrastructure. Effective team player, familiar with Scrum methodology and deep understanding of organizational culture. Always seeking new opportunities to learn and apply new technologies.</p>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>Laravel Framework</li>
+        <li>Linux</li>
+        <li>Git</li>
+        <li>jQuery</li>
+        <li>WHMCS</li>
+        <li>MySQL</li>
+        <li>Bootstrap</li>
+        <li>RESTful Web Service Design</li>
+        <li>Docker</li>
+        <li>Python</li>
+        <li>Redis</li>
+        <li>Memcached</li>
+        <li>Vue.js</li>
+    </ul>
+
+    <h2>Work Experience</h2>
+    <h3>Senior PHP Programmer</h3>
+    <p><em>Limo Host, Khorasan Razavi, Mashhad | November 2023 - Present</em></p>
+    <ul>
+        <li>Development and optimization of PHP, Laravel, and WHMCS-based systems</li>
+        <li>Implementation and improvement of Docker and Linux infrastructure</li>
+        <li>Working with artificial intelligence (AI) and Ollama for natural language processing</li>
+        <li>Design and implementation of a Flask-based RAG system with hybrid indexing for intelligent Q&A</li>
+        <li>Development and management of Next.js and React.js-based projects</li>
+        <li>Working with Golang in various software sections</li>
+    </ul>
+
+    <h3>Backend Development Consultant</h3>
+    <p><em>Amlek Plus, Khorasan Razavi, Mashhad | January 2025 - March 2025</em></p>
+    <ul>
+        <li>Consulting on data transfer and change using artificial intelligence and data processing for building new systems</li>
+    </ul>
+
+    <h3>Infrastructure Development Consultant</h3>
+    <p><em>Telefon Chi, Khorasan Razavi, Mashhad | May 2024 - July 2024</em></p>
+    <ul>
+        <li>Transferring services to Docker and developing CI/CD automation</li>
+        <li>Creating local Rocket.Chat and Jira systems</li>
+        <li>Analyzing infrastructure needs and providing optimal solutions to improve system performance</li>
+        <li>Managing infrastructure development projects with precise scheduling and budgeting</li>
+        <li>Collaborating with technical teams in designing and implementing communication networks and information systems</li>
+        <li>Training and guiding employees in the optimal use of new infrastructure systems</li>
+    </ul>
+
+    <h3>PHP Backend Programmer</h3>
+    <p><em>Iran Server (Green Web), Khorasan Razavi, Mashhad | February 2022 - December 2022</em></p>
+    <ul>
+        <li>Server-side programming and product development</li>
+        <li>Maintaining a website builder</li>
+        <li>Working with microservices on Hetzner servers and support</li>
+        <li><a href="https://www.iranserver.com">https://www.iranserver.com</a></li>
+    </ul>
+
+    <h3>Senior Backend Programmer</h3>
+    <p><em>Oping Cloud, Khorasan Razavi, Mashhad | January 2024 - Present</em></p>
+    <ul>
+        <li>Development and optimization of PHP, Laravel, and WHMCS-based systems</li>
+        <li>Design and implementation of RESTful APIs</li>
+        <li>Working with artificial intelligence (AI) and Ollama in natural language processing</li>
+        <li>Management and optimization of Docker and Linux infrastructure</li>
+        <li>Development and maintenance of Next.js and React.js-based projects</li>
+        <li>Using Golang in various software sections</li>
+    </ul>
+
+    <h3>PHP Programmer</h3>
+    <p><em>Noban, Khorasan Razavi, Mashhad | May 2023 - November 2023</em></p>
+    <ul>
+        <li>Development and maintenance of internal systems and commercial products</li>
+        <li>Rewriting and updating systems</li>
+        <li>Design and implementation of databases for e-commerce systems</li>
+        <li>Development and support of content management systems using PHP</li>
+        <li>Transfer and rewriting of old backend code from PHP to NestJS</li>
+    </ul>
+
+    <h3>Laravel Programming</h3>
+    <p><em>Tose'e Tejarat Dorna (Education Ministry), Khorasan Razavi, Mashhad | March 2023 - May 2023</em></p>
+    <ul>
+        <li>Development and implementation of RESTful APIs using Laravel and integration with external services</li>
+    </ul>
+
+    <h3>Laravel Programmer</h3>
+    <p><em>Raya Ertebatat Kish, Khorasan Razavi, Mashhad | March 2020 - January 2022</em></p>
+    <ul>
+        <li>PHP Laravel programming</li>
+        <li><a href="http://rek.co.ir/">http://rek.co.ir/</a></li>
+    </ul>
+
+    <h3>PHP Programmer</h3>
+    <p><em>BasketAsia (A Hosting in Malaysia), Malaysia | March 2023 - Present</em></p>
+    <ul>
+        <li>Development of a WHMCS module along with a dedicated service</li>
+        <li><a href="https://www.basketasia.com/">https://www.basketasia.com/</a></li>
+    </ul>
+
+    <h3>PHP Programmer</h3>
+    <p><em>Net Afraz, Isfahan | June 2023 - June 2023</em></p>
+    <ul>
+        <li>Development of WHMCS module and an internal service</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <h3>Nowruz Campaign</h3>
+    <p><em>Client/Requestor: Bit20 Exchange | March 2022</em></p>
+    <ul>
+        <li>Project campaign for Bit20 Exchange</li>
+        <li>Related link: <a href="https://20bash.bistbit.com">https://20bash.bistbit.com</a></li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Bachelor's in Computer Engineering</strong><br>Institute/University: Tus Non-Profit</li>
+    </ul>
+
+    <h2>Social Networks</h2>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/mohammadjavadazimi">LinkedIn: www.linkedin.com/in/mohammadjavadazimi</a></li>
+        <li><a href="https://github.com/mj-azimi">GitHub: https://github.com/mj-azimi</a></li>
+    </ul>
+</body>
+</html>
