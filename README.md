@@ -25,6 +25,7 @@ Web programmer with five years of experience in development and optimization of 
 - Vue.js
 - React.js
 - Next.js
+- Database Optimization (MySQL & PostgreSQL)
 
 ## Work Experience
 
@@ -98,6 +99,19 @@ Web programmer with five years of experience in development and optimization of 
 *_Client/Requestor: Bit20 Exchange | March 2022_*
 - Project campaign for Bit20 Exchange
 - Related link: [https://20bash.bistbit.com](https://20bash.bistbit.com)
+
+### Telegram Pixel Art Bot
+*_Interactive Telegram Bot | Ongoing_*
+- Developed a Telegram bot allowing users to color one pixel on a shared canvas every few minutes, enabling collaborative pixel art creation.
+
+### AI-Powered Automated Ticketing System
+*_Intelligent Support Platform | Recent_*
+- Built an AI-driven ticketing system with deep business knowledge comprehension, capable of autonomously performing actions on the system to resolve user issues.
+
+### Boometo AI Image Generator
+*_AI Platform for Text-to-Image | Live_*
+- Created a Persian-English AI platform for generating high-quality images from text prompts, featuring 50+ art styles, 4K resolution, personal galleries, and web design tools like logos and banners.
+- Related link: [https://boometo.com/](https://boometo.com/)
 
 ## Education
 - **Bachelor's in Computer Engineering**  
