@@ -1,7 +1,7 @@
 # Mohammad Javad Azimi
 **Web Programmer**
 
-**Email:** mohammadjavad2903@gmail.com | **Mobile:** (+98) 9150567825 | **Address:** Khorasan Razavi, Mashhad, Abdolmotalleb  
+**Email:** joorjin2@gmail.com | **Mobile:** (+98) 9150567825 | **Address:** Khorasan Razavi, Mashhad, Abdolmotalleb  
 **Birth Date:** November 4, 2001 | **Marital Status:** Single
 
 ## Professional Summary
