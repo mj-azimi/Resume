@@ -1,122 +1,103 @@
 # Mohammad Javad Azimi
-**Web Programmer**
+**Senior Software Engineer (Backend & Infrastructure)**
 
-**Email:** joorjin2@gmail.com | **Mobile:** (+98) 9150567825 | **Address:** Khorasan Razavi, Mashhad, Abdolmotalleb  
-**Birth Date:** November 4, 2001 | **Marital Status:** Single
+**Email:** joorjin2@gmail.com | **Mobile:** (+98) 915 056 7825 | **Location:** Mashhad, Iran  
+**LinkedIn:** [linkedin.com/in/mohammadjavadazimi](https://www.linkedin.com/in/mohammadjavadazimi) | **GitHub:** [github.com/mj-azimi](https://github.com/mj-azimi)  
+**Live Resumes:** [Persian Version (faResume.html)](https://mj-azimi.github.io/Resume/faResume.html) | [English Version (index.html)](https://mj-azimi.github.io/Resume/)
+
+---
 
 ## Professional Summary
-Web programmer with five years of experience in development and optimization of PHP and Laravel-based systems. Specialist in implementing Docker and Linux infrastructure. Effective team player, familiar with Scrum methodology and deep understanding of organizational culture. Always seeking new opportunities to learn and apply new technologies.
+Senior Software Engineer with **5+ years of hands-on experience** architecting high-load hosting platforms, microservices, and cloud systems. Deep expertise in backend engineering with **PHP/Laravel**, **Golang**, and **Python**, combined with extensive experience in **Linux server administration**, **Docker** containerization, and **CI/CD** automation. Pioneer in **Vibe Coding** and modern AI engineering workflows, deploying production-grade RAG systems and local LLMs (Ollama) that delivered tangible business results (including a **25% reduction in support ticket volume at LimoHost**).
 
-## Skills
-- Laravel Framework
-- Linux
-- Git
-- jQuery
-- WHMCS
-- MySQL
-- PostgreSQL
-- Bootstrap
-- RESTful Web Service Design
-- Docker
-- Python
-- Flask
-- Redis
-- Memcached
-- Vue.js
-- React.js
-- Next.js
-- Database Optimization (MySQL & PostgreSQL)
+---
+
+## Technical Skills
+
+- **Backend & Architecture:** PHP, Laravel, Golang, Python (Flask), NestJS, RESTful APIs, Microservices, WHMCS Architecture, Clean Architecture
+- **Server, Infrastructure & DevOps:** Linux Server Administration, Docker, Docker Compose, CI/CD Automation, Hetzner Cloud, Git / GitHub, Server Hardening & Security
+- **Databases & Caching:** MySQL, PostgreSQL, Redis, Memcached, Query Optimization, Database Indexing
+- **AI & Modern Workflows:** Vibe Coding, AI-Driven Development, RAG (Retrieval-Augmented Generation), Local LLMs (Ollama), Hybrid Indexing & Search
+- **Frontend & Tooling:** Next.js, React.js, Vue.js, jQuery, Bootstrap, Tailwind CSS
+
+---
 
 ## Work Experience
 
-### Senior PHP Programmer
-*_Limo Host, Khorasan Razavi, Mashhad | November 2023 - Present_*
-- Development and optimization of PHP, Laravel, and WHMCS-based systems
-- Implementation and improvement of Docker and Linux infrastructure
-- Working with artificial intelligence (AI) and Ollama for natural language processing
-- Design and implementation of a Flask-based RAG system with hybrid indexing for intelligent Q&A
-- Development and management of Next.js and React.js-based projects
-- Working with Golang in various software sections
+### Senior Software Engineer (Backend & Infrastructure)
+*_LimoHost, Mashhad, Iran | Full-Time | November 2023 – Present_*
+- **Achieved a 25% reduction in customer support ticket volume** by designing and implementing an autonomous AI support ticketing system powered by RAG (Hybrid Indexing, Python/Flask, and Ollama) with deep domain comprehension of hosting issues.
+- Engineered, refactored, and maintained core hosting infrastructure modules and business logic using PHP, Laravel, and WHMCS.
+- **Linux Server Administration & Docker Infrastructure:** Containerized critical microservices, hardened server environments, and ensured high system reliability and uptime across high-load hosting environments.
+- Developed high-performance microservices with **Golang** for latency-sensitive processes.
+- Built and maintained user-facing dashboards using **React.js** and **Next.js**.
+- Link: [https://limoo.host](https://limoo.host)
 
-### Backend Development Consultant
-*_Amlek Plus, Khorasan Razavi, Mashhad | January 2025 - March 2025_*
-- Consulting on data transfer and change using artificial intelligence and data processing for building new systems
+### Senior Backend Developer
+*_Oping Cloud, Mashhad, Iran | Part-Time | January 2024 – Present_*
+- Designed scalable RESTful APIs with Laravel and leveraged **Golang** for computational workloads.
+- Integrated local LLM workflows using **Ollama** for automated natural language processing.
+- Administered Linux servers, optimized Docker environments, and streamlined container deployment pipelines.
+- Developed and maintained responsive web dashboards using **React.js** and **Next.js**.
+- Link: [https://oping.cloud](https://oping.cloud)
 
-### Infrastructure Development Consultant
-*_Telefon Chi, Khorasan Razavi, Mashhad | May 2024 - July 2024_*
-- Transferring services to Docker and developing CI/CD automation
-- Creating local Rocket.Chat and Jira systems
-- Analyzing infrastructure needs and providing optimal solutions to improve system performance
-- Managing infrastructure development projects with precise scheduling and budgeting
-- Collaborating with technical teams in designing and implementing communication networks and information systems
-- Training and guiding employees in the optimal use of new infrastructure systems
+### Hosting Backend Developer
+*_BasketAsia, Malaysia | Part-Time / International Remote | March 2023 – Present_*
+- Engineered custom WHMCS modules and dedicated backend services for automated server provisioning and customer life-cycle management.
+- Maintained international payment gateways and cloud infrastructure integrations.
+- Link: [https://www.basketasia.com/](https://www.basketasia.com/)
 
-### PHP Backend Programmer
-*_Iran Server (Green Web), Khorasan Razavi, Mashhad | February 2022 - December 2022_*
-- Server-side programming and product development
-- Maintaining a website builder
-- Working with microservices on Hetzner servers and support
-- [https://www.iranserver.com](https://www.iranserver.com)
+### Backend & Big Data Consultant
+*_Amlak Plus, Mashhad, Iran | Consulting | January 2025 – March 2025_*
+- Advised on complex data migration and database restructuring utilizing data pipelines and AI-assisted data processing for modern real-estate systems.
 
-### Senior Backend Programmer
-*_Oping Cloud, Khorasan Razavi, Mashhad | January 2024 - Present_*
-- Development and optimization of PHP, Laravel, and WHMCS-based systems
-- Design and implementation of RESTful APIs
-- Working with artificial intelligence (AI) and Ollama in natural language processing
-- Management and optimization of Docker and Linux infrastructure
-- Development and maintenance of Next.js and React.js-based projects
-- Using Golang in various software sections
+### Infrastructure & DevOps Consultant
+*_Telefon Chi, Mashhad, Iran | Consulting | May 2024 – July 2024_*
+- Containerized operational services using Docker and built automated CI/CD deployment pipelines.
+- Configured and deployed self-hosted instances of Rocket.Chat and local Jira to streamline team operations.
+- Analyzed infrastructure bottlenecks, strengthened server security, and conducted staff technical training.
 
-### PHP Programmer
-*_Noban, Khorasan Razavi, Mashhad | May 2023 - November 2023_*
-- Development and maintenance of internal systems and commercial products
-- Rewriting and updating systems
-- Design and implementation of databases for e-commerce systems
-- Development and support of content management systems using PHP
-- Transfer and rewriting of old backend code from PHP to NestJS
+### PHP Backend Developer
+*_IranServer (Green Web Holding), Mashhad, Iran | February 2022 – December 2022_*
+- Developed server-side architecture and maintained an e-commerce website builder product.
+- Collaborated on microservice integration across Hetzner cloud and dedicated server environments.
+- Link: [https://www.iranserver.com](https://www.iranserver.com)
 
-### Laravel Programming
-*_Tose'e Tejarat Dorna (Education Ministry), Khorasan Razavi, Mashhad | March 2023 - May 2023_*
-- Development and implementation of RESTful APIs using Laravel and integration with external services
+### Backend Developer
+*_Nobaan, Mashhad, Iran | May 2023 – November 2023_*
+- Refactored legacy PHP backend systems into modular, testable architectures with **NestJS**.
+- Designed relational database schemas for commercial e-commerce platforms and developed CMS services.
+- Link: [https://nobaan.com](https://nobaan.com)
 
-### Laravel Programmer
-*_Raya Ertebatat Kish, Khorasan Razavi, Mashhad | March 2020 - January 2022_*
-- PHP Laravel programming
-- [http://rek.co.ir/](http://rek.co.ir/)
+### Earlier Software Engineering Experience
+- **Tose'e Tejarat Dorna (Education Ministry)** (Mar 2023 – May 2023): Implemented secure RESTful APIs with Laravel integrated with governmental services.
+- **NetAfraz** (Jun 2023): Built custom WHMCS modules and internal backend integration services.
+- **Raya Ertebatat Kish** (Mar 2020 – Jan 2022): Backend development with PHP & Laravel for commercial web solutions.
 
-### PHP Programmer
-*_BasketAsia (A Hosting in Malaysia), Malaysia | March 2023 - Present_*
-- Development of a WHMCS module along with a dedicated service
-- [https://www.basketasia.com/](https://www.basketasia.com/)
+---
 
-### PHP Programmer
-*_Net Afraz, Isfahan | June 2023 - June 2023_*
-- Development of WHMCS module and an internal service
+## Featured Projects & Products
 
-## Projects
+### Boometo AI Image Platform
+*_Live Product | [https://boometo.com/](https://boometo.com/)*_
+- Bilingual (Persian/English) AI text-to-image platform generating 4K images across 50+ artistic styles, featuring user galleries, logo, and banner creation tools.
+- **Scale:** **5,000+ active users** and over **50,000+ generated images**.
 
-### Nowruz Campaign
-*_Client/Requestor: Bit20 Exchange | March 2022_*
-- Project campaign for Bit20 Exchange
-- Related link: [https://20bash.bistbit.com](https://20bash.bistbit.com)
+### Autonomous AI Support & Ticketing System
+*_Production System at LimoHost_*
+- Intelligent RAG-based ticketing system capable of understanding complex hosting queries and executing automated system diagnostics and resolutions.
+- **Impact:** **25% reduction in support ticket volume** with real-time automated resolution.
 
-### Telegram Pixel Art Bot
-*_Interactive Telegram Bot | Ongoing_*
-- Developed a Telegram bot allowing users to color one pixel on a shared canvas every few minutes, enabling collaborative pixel art creation.
+### Telegram Pixel Art Collaborative Bot
+*_Interactive Telegram Bot_*
+- Real-time interactive bot enabling thousands of Telegram users to collaborate on a shared canvas by placing colored pixels at intervals.
 
-### AI-Powered Automated Ticketing System
-*_Intelligent Support Platform | Recent_*
-- Built an AI-driven ticketing system with deep business knowledge comprehension, capable of autonomously performing actions on the system to resolve user issues.
+### Bit20 Crypto Exchange Campaign
+*_Fintech Platform | [https://20bash.bistbit.com](https://20bash.bistbit.com)*_
+- High-traffic promotional campaign platform integrated securely with cryptocurrency exchange user verification and real-time reward allocation.
 
-### Boometo AI Image Generator
-*_AI Platform for Text-to-Image | Live_*
-- Created a Persian-English AI platform for generating high-quality images from text prompts, featuring 50+ art styles, 4K resolution, personal galleries, and web design tools like logos and banners.
-- Related link: [https://boometo.com/](https://boometo.com/)
+---
 
 ## Education
-- **Bachelor's in Computer Engineering**  
-  Institute/University: Tus Non-Profit
-
-## Social Networks
-- [LinkedIn: www.linkedin.com/in/mohammadjavadazimi](https://www.linkedin.com/in/mohammadjavadazimi)
-- [GitHub: https://github.com/mj-azimi](https://github.com/mj-azimi)
+- **B.Sc. in Computer Engineering**  
+  Tus Institute of Higher Education

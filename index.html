@@ -1,255 +1,1143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Javad Azimi - Resume</title>
+    <title>Mohammad Javad Azimi - Senior Software Engineer (Backend & Infrastructure)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #2563eb;
+            --primary-bg: #eff6ff;
+            --accent: #0d9488;
+            --dark: #0f172a;
+            --gray-900: #1e293b;
+            --gray-700: #334155;
+            --gray-600: #475569;
+            --gray-500: #64748b;
+            --gray-200: #e2e8f0;
+            --gray-100: #f1f5f9;
+            --gray-50: #f8fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.4;
-            color: #333;
-            max-width: 1012px;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--gray-700);
+            line-height: 1.65;
+            direction: ltr;
+            text-align: left;
+            padding: 24px 16px;
+            font-size: 14.5px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .resume-wrapper {
+            max-width: 1040px;
             margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            border: 1px solid var(--border);
         }
 
-        h1 {
-            text-align: center;
-            color: #2c3e50;
+        /* Top Action Bar */
+        .action-bar {
+            background: linear-gradient(135deg, var(--gray-900) 0%, #0f172a 100%);
+            padding: 14px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        h2 {
-            color: #34495e;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
+        .action-bar .brand-badge {
+            color: #94a3b8;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        h3 {
-            color: #2c3e50;
-            margin-top: 20px;
+        .action-bar .brand-badge span {
+            color: #38bdf8;
+            font-weight: 600;
         }
 
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        .action-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        .contact {
-            text-align: center;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-
-        em {
-            font-style: italic;
-            color: #7f8c8d;
-        }
-
-        a {
-            color: #3498db;
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 13.5px;
+            font-family: inherit;
+            font-weight: 600;
+            cursor: pointer;
             text-decoration: none;
+            transition: all 0.2s ease;
+            border: none;
         }
 
-        a:hover {
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.08);
+            color: #f1f5f9;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.18);
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background: var(--primary-light);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+            transform: translateY(-1px);
+        }
+
+        /* Header Area */
+        .resume-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: var(--white);
+            padding: 40px 44px 34px;
+            position: relative;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header-main h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .target-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 99, 235, 0.25);
+            color: #60a5fa;
+            border: 1px solid rgba(96, 165, 250, 0.35);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 14.5px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .header-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13.5px;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .contact-item:hover {
+            color: #38bdf8;
+        }
+
+        .contact-item svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            fill: currentColor;
+            opacity: 0.85;
+        }
+
+        .header-summary {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            color: #cbd5e1;
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .header-summary strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* Two Column Body Layout */
+        .resume-body {
+            display: grid;
+            grid-template-columns: 310px 1fr;
+            min-height: 800px;
+        }
+
+        /* Sidebar Column */
+        .sidebar {
+            background-color: #fafbfc;
+            border-right: 1px solid var(--border);
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        /* Main Content Column */
+        .main-content {
+            padding: 34px 38px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        /* Section Headings */
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 17px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+            position: relative;
+        }
+
+        .section-title svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary-light);
+            flex-shrink: 0;
+        }
+
+        /* Skills Groups */
+        .skill-group {
+            margin-bottom: 18px;
+        }
+
+        .skill-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-group-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .skill-group-title::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill-tag {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            color: var(--gray-900);
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            box-shadow: var(--shadow-sm);
+            display: inline-block;
+        }
+
+        .skill-tag.highlight {
+            background: var(--primary-bg);
+            border-color: #bfdbfe;
+            color: var(--primary-light);
+            font-weight: 700;
+        }
+
+        .skill-tag.accent {
+            background: #f0fdfa;
+            border-color: #99f6e4;
+            color: #0f766e;
+            font-weight: 700;
+        }
+
+        /* Experience Timeline Items */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            position: relative;
+        }
+
+        .job-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 18px 20px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .job-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-md);
+        }
+
+        .job-card.current {
+            border-left: 4px solid var(--primary-light);
+            background: linear-gradient(90deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .job-title-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--dark);
+        }
+
+        .job-badge {
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 2px 9px;
+            border-radius: 999px;
+        }
+
+        .badge-fulltime {
+            background: #dcfce7;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+        }
+
+        .badge-parttime {
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fde68a;
+        }
+
+        .badge-consultant {
+            background: #f3e8ff;
+            color: #6b21a8;
+            border: 1px solid #e9d5ff;
+        }
+
+        .badge-remote {
+            background: #e0f2fe;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+        }
+
+        .job-date {
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--gray-500);
+        }
+
+        .job-company {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-bottom: 10px;
+        }
+
+        .job-company a {
+            color: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .job-company a:hover {
             text-decoration: underline;
         }
 
-        .language-toggle {
-            text-align: center;
-            margin-bottom: 20px;
+        .job-company .company-location {
+            color: var(--gray-500);
+            font-weight: normal;
+            font-size: 12px;
         }
 
-        .language-toggle button {
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+        .job-desc {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
         }
 
-        .language-toggle button:hover {
-            background: #2980b9;
+        .job-desc li {
+            position: relative;
+            padding-left: 18px;
+            font-size: 13.5px;
+            color: var(--gray-700);
+            line-height: 1.6;
+        }
+
+        .job-desc li::before {
+            content: "•";
+            position: absolute;
+            left: 2px;
+            top: 0px;
+            color: var(--primary-light);
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .job-desc li strong {
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            transition: all 0.2s ease;
+        }
+
+        .project-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .project-card.featured {
+            border-color: #93c5fd;
+            background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+        }
+
+        .project-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+        }
+
+        .project-title a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .project-title a:hover {
+            text-decoration: underline;
+        }
+
+        .project-desc {
+            font-size: 13px;
+            color: var(--gray-600);
+            line-height: 1.55;
+        }
+
+        .project-desc strong {
+            color: var(--dark);
+        }
+
+        .project-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 4px;
+        }
+
+        .metric-pill {
+            background: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            color: #065f46;
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        /* Sidebar Elements */
+        .info-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .info-item-label {
+            font-size: 12px;
+            color: var(--gray-500);
+            margin-bottom: 2px;
+        }
+
+        .info-item-value {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+
+        .edu-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+        }
+
+        .edu-degree {
+            font-size: 14px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .edu-school {
+            font-size: 13px;
+            color: var(--gray-600);
+        }
+
+        /* Responsive */
+        @media (max-width: 860px) {
+            .resume-body {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .resume-header {
+                padding: 30px 24px;
+            }
+
+            .main-content {
+                padding: 24px;
+            }
+        }
+
+        /* Print Optimization */
+        @media print {
+            body {
+                background: #ffffff !important;
+                padding: 0 !important;
+                font-size: 11.5pt;
+                color: #000000;
+            }
+
+            .action-bar {
+                display: none !important;
+            }
+
+            .resume-wrapper {
+                max-width: 100% !important;
+                box-shadow: none !important;
+                border: none !important;
+                border-radius: 0 !important;
+            }
+
+            .resume-header {
+                background: #0f172a !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                padding: 24px 30px !important;
+                color: #ffffff !important;
+            }
+
+            .header-main h1 {
+                color: #ffffff !important;
+                font-size: 22pt !important;
+            }
+
+            .target-title {
+                border-color: #60a5fa !important;
+                color: #93c5fd !important;
+            }
+
+            .resume-body {
+                grid-template-columns: 240px 1fr !important;
+            }
+
+            .sidebar {
+                background-color: #f8fafc !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                padding: 20px 16px !important;
+            }
+
+            .main-content {
+                padding: 20px 24px !important;
+            }
+
+            .job-card {
+                page-break-inside: avoid;
+                break-inside: avoid;
+                border: 1px solid #e2e8f0 !important;
+                padding: 12px 14px !important;
+                margin-bottom: 12px !important;
+            }
+
+            .project-card {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: inherit !important;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="language-toggle">
-        <button onclick="window.location.href='faResume.html'">مشاهده نسخه فارسی</button>
+
+    <div class="resume-wrapper">
+
+        <!-- Top Action Bar -->
+        <div class="action-bar">
+            <div class="brand-badge">
+                <span>Mohammad Javad Azimi</span> | Software Engineering Resume
+            </div>
+            <div class="action-buttons">
+                <a href="faResume.html" class="btn btn-outline">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M2 12h20"></path>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    نسخه فارسی
+                </a>
+                <button onclick="window.print()" class="btn btn-primary">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8"></rect>
+                    </svg>
+                    Print / Save PDF
+                </button>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="resume-header">
+            <div class="header-top">
+                <div class="header-main">
+                    <h1>Mohammad Javad Azimi</h1>
+                    <div class="target-title">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        Senior Software Engineer (Backend & Infrastructure)
+                    </div>
+                </div>
+
+                <div class="header-contact">
+                    <a href="mailto:joorjin2@gmail.com" class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        joorjin2@gmail.com
+                    </a>
+                    <a href="tel:09150567825" class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        (+98) 915 056 7825
+                    </a>
+                    <span class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        Mashhad, Iran
+                    </span>
+                    <div style="display: flex; gap: 14px; margin-top: 4px;">
+                        <a href="https://linkedin.com/in/mohammadjavadazimi" target="_blank" class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 0 0-1.66 1.64 1.65 1.65 0 0 0 1.66 1.65 1.64 1.64 0 0 0 1.65-1.65c0-.9-.74-1.64-1.65-1.64z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/mj-azimi" target="_blank" class="contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-summary">
+                Senior Software Engineer with <strong>5+ years of hands-on experience</strong> architecting high-load hosting platforms, microservices, and cloud systems. Deep expertise in backend engineering with <strong>PHP/Laravel</strong>, <strong>Golang</strong>, and <strong>Python</strong>, combined with extensive experience in <strong>Linux server administration</strong>, <strong>Docker</strong> containerization, and <strong>CI/CD</strong> automation. Pioneer in <strong>Vibe Coding</strong> and modern AI engineering workflows, deploying production-grade RAG systems and local LLMs (Ollama) that delivered tangible business results (including a <strong>25% reduction in support ticket volume at LimoHost</strong>).
+            </div>
+        </header>
+
+        <!-- Main Body -->
+        <div class="resume-body">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+
+                <!-- Skills -->
+                <div>
+                    <h3 class="section-title">
+                        <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                        Technical Skills
+                    </h3>
+
+                    <div class="skill-group">
+                        <div class="skill-group-title">Backend & Architecture</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">PHP</span>
+                            <span class="skill-tag highlight">Laravel</span>
+                            <span class="skill-tag highlight">Golang</span>
+                            <span class="skill-tag">Python (Flask)</span>
+                            <span class="skill-tag">NestJS</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">WHMCS Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-title">Server & DevOps</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag accent">Linux Server Admin</span>
+                            <span class="skill-tag highlight">Docker</span>
+                            <span class="skill-tag">Docker Compose</span>
+                            <span class="skill-tag">CI/CD Automation</span>
+                            <span class="skill-tag">Hetzner Cloud</span>
+                            <span class="skill-tag">Git / GitHub</span>
+                            <span class="skill-tag">Server Security</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-title">Databases & Caching</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag highlight">Redis</span>
+                            <span class="skill-tag">Memcached</span>
+                            <span class="skill-tag">Query Optimization</span>
+                            <span class="skill-tag">Indexing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-title">AI & Modern Workflows</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag accent">Vibe Coding</span>
+                            <span class="skill-tag highlight">RAG Systems</span>
+                            <span class="skill-tag">Local LLMs (Ollama)</span>
+                            <span class="skill-tag">Hybrid Search</span>
+                            <span class="skill-tag">AI Workflows</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-title">Frontend & Tooling</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">jQuery</span>
+                            <span class="skill-tag">Bootstrap / Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <h3 class="section-title">
+                        <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                        Education
+                    </h3>
+                    <div class="edu-card">
+                        <div class="edu-degree">B.Sc. in Computer Engineering</div>
+                        <div class="edu-school">Tus Institute of Higher Education</div>
+                    </div>
+                </div>
+
+                <!-- Personal Info & Languages -->
+                <div>
+                    <h3 class="section-title">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Details & Languages
+                    </h3>
+                    <ul class="info-list">
+                        <li>
+                            <div class="info-item-label">Birth Date</div>
+                            <div class="info-item-value">November 4, 2001</div>
+                        </li>
+                        <li>
+                            <div class="info-item-label">Languages</div>
+                            <div class="info-item-value">Persian (Native) | English (Professional)</div>
+                        </li>
+                        <li>
+                            <div class="info-item-label">Methodologies</div>
+                            <div class="info-item-value">Agile / Scrum, Clean Architecture, CI/CD</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+
+            <!-- Main Content: Experience & Projects -->
+            <main class="main-content">
+
+                <!-- Experience Section -->
+                <section>
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                        Work Experience
+                    </h2>
+
+                    <div class="timeline">
+
+                        <!-- Limoo Host -->
+                        <div class="job-card current">
+                            <div class="job-header">
+                                <div class="job-title-wrapper">
+                                    <h3 class="job-title">Senior Software Engineer (Backend & Infrastructure)</h3>
+                                    <span class="job-badge badge-fulltime">Full-Time</span>
+                                </div>
+                                <span class="job-date">Nov 2023 – Present</span>
+                            </div>
+                            <div class="job-company">
+                                <a href="https://limoo.host" target="_blank">
+                                    LimoHost
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <span class="company-location">| Mashhad, Iran (Leading Cloud & Web Hosting Provider)</span>
+                            </div>
+                            <ul class="job-desc">
+                                <li><strong>Achieved a 25% reduction in support ticket volume:</strong> Architected and built an automated AI support ticketing system powered by RAG (Hybrid Indexing, Python/Flask, and Ollama) with deep domain comprehension of hosting issues.</li>
+                                <li>Engineered and optimized core hosting infrastructure modules and business logic using PHP, Laravel, and WHMCS.</li>
+                                <li><strong>Linux Server Administration & Docker Infrastructure:</strong> Containerized key microservices, hardened server environments, and maintained high system reliability and uptime.</li>
+                                <li>Built high-throughput backend services and microservices using <strong>Golang</strong> for latency-sensitive tasks.</li>
+                                <li>Developed and maintained customer-facing panels and interfaces using <strong>React.js</strong> and <strong>Next.js</strong>.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Oping Cloud -->
+                        <div class="job-card current">
+                            <div class="job-header">
+                                <div class="job-title-wrapper">
+                                    <h3 class="job-title">Senior Backend Developer</h3>
+                                    <span class="job-badge badge-parttime">Part-Time</span>
+                                </div>
+                                <span class="job-date">Jan 2024 – Present</span>
+                            </div>
+                            <div class="job-company">
+                                <a href="https://oping.cloud" target="_blank">
+                                    Oping Cloud
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <span class="company-location">| Mashhad, Iran</span>
+                            </div>
+                            <ul class="job-desc">
+                                <li>Designed scalable RESTful APIs with Laravel and leveraged <strong>Golang</strong> for computational workloads.</li>
+                                <li>Integrated local LLM workflows using <strong>Ollama</strong> for automated natural language processing.</li>
+                                <li>Administered Linux servers, optimized Docker environments, and streamlined container deployment pipelines.</li>
+                                <li>Maintained interactive web dashboards using <strong>React.js</strong> and <strong>Next.js</strong>.</li>
+                            </ul>
+                        </div>
+
+                        <!-- BasketAsia -->
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title-wrapper">
+                                    <h3 class="job-title">Hosting Backend Developer</h3>
+                                    <span class="job-badge badge-parttime">Part-Time</span>
+                                    <span class="job-badge badge-remote">International Remote</span>
+                                </div>
+                                <span class="job-date">Mar 2023 – Present</span>
+                            </div>
+                            <div class="job-company">
+                                <a href="https://www.basketasia.com/" target="_blank">
+                                    BasketAsia
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <span class="company-location">| Malaysia</span>
+                            </div>
+                            <ul class="job-desc">
+                                <li>Engineered custom WHMCS modules along with dedicated automation backend microservices for automated server provisioning.</li>
+                                <li>Maintained seamless integration between hosting control panels, billing workflows, and infrastructure endpoints.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Amlak Plus -->
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title-wrapper">
+                                    <h3 class="job-title">Backend & Big Data Consultant</h3>
+                                    <span class="job-badge badge-consultant">Consulting</span>
+                                </div>
+                                <span class="job-date">Jan 2025 – Mar 2025</span>
+                            </div>
+                            <div class="job-company">
+                                <span>Amlak Plus</span>
+                                <span class="company-location">| Mashhad, Iran</span>
+                            </div>
+                            <ul class="job-desc">
+                                <li>Advised on complex data migration and database restructuring utilizing data pipelines and AI-assisted data processing for modern real-estate systems.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Telefon Chi -->
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title-wrapper">
+                                    <h3 class="job-title">Infrastructure & DevOps Consultant</h3>
+                                    <span class="job-badge badge-consultant">Consulting</span>
+                                </div>
+                                <span class="job-date">May 2024 – Jul 2024</span>
+                            </div>
+                            <div class="job-company">
+                                <span>Telefon Chi</span>
+                                <span class="company-location">| Mashhad, Iran</span>
+                            </div>
+                            <ul class="job-desc">
+                                <li>Containerized operational services using Docker and built automated CI/CD deployment pipelines.</li>
+                                <li>Configured and deployed self-hosted instances of Rocket.Chat and local Jira to streamline team operations.</li>
+                                <li>Analyzed infrastructure bottlenecks, strengthened server security, and conducted staff technical training.</li>
+                            </ul>
+                        </div>
+
+                        <!-- IranServer -->
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title-wrapper">
+                                    <h3 class="job-title">PHP Backend Developer</h3>
+                                </div>
+                                <span class="job-date">Feb 2022 – Dec 2022</span>
+                            </div>
+                            <div class="job-company">
+                                <a href="https://www.iranserver.com" target="_blank">
+                                    IranServer (Green Web Holding)
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <span class="company-location">| Mashhad, Iran</span>
+                            </div>
+                            <ul class="job-desc">
+                                <li>Developed server-side architecture and maintained an e-commerce website builder product.</li>
+                                <li>Collaborated on microservice integration across Hetzner cloud and dedicated server environments.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Nobaan -->
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title-wrapper">
+                                    <h3 class="job-title">Backend Developer</h3>
+                                </div>
+                                <span class="job-date">May 2023 – Nov 2023</span>
+                            </div>
+                            <div class="job-company">
+                                <a href="https://nobaan.com" target="_blank">
+                                    Nobaan
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                                <span class="company-location">| Mashhad, Iran</span>
+                            </div>
+                            <ul class="job-desc">
+                                <li>Refactored legacy PHP backend systems into modular, testable architectures with <strong>NestJS</strong>.</li>
+                                <li>Designed relational database schemas for commercial e-commerce platforms and developed CMS services.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Previous Software Roles -->
+                        <div class="job-card">
+                            <div class="job-header">
+                                <div class="job-title-wrapper">
+                                    <h3 class="job-title">Earlier Software Engineering Experience</h3>
+                                </div>
+                                <span class="job-date">2020 – 2023</span>
+                            </div>
+                            <ul class="job-desc">
+                                <li><strong>Tose'e Tejarat Dorna (Education Ministry)</strong> (Mar 2023 – May 2023): Implemented secure RESTful APIs with Laravel integrated with governmental services.</li>
+                                <li><strong>NetAfraz</strong> (Jun 2023): Built custom WHMCS modules and backend integration services.</li>
+                                <li><strong>Raya Ertebatat Kish</strong> (Mar 2020 – Jan 2022): Backend development with PHP & Laravel for commercial web solutions.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Key Projects Section -->
+                <section>
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                        Featured Projects & Products
+                    </h2>
+
+                    <div class="projects-grid">
+
+                        <!-- Boometo -->
+                        <div class="project-card featured">
+                            <div>
+                                <div class="project-title">
+                                    Boometo AI Image Platform
+                                    <a href="https://boometo.com/" target="_blank">
+                                        boometo.com
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                                <p class="project-desc">
+                                    Bilingual text-to-image AI platform generating 4K images across 50+ artistic styles, featuring user galleries, logo, and banner creation tools.
+                                </p>
+                            </div>
+                            <div class="project-metrics">
+                                <span class="metric-pill">5,000+ Active Users</span>
+                                <span class="metric-pill">50,000+ Generated Images</span>
+                                <span class="metric-pill">4K Generation</span>
+                            </div>
+                        </div>
+
+                        <!-- AI Ticketing -->
+                        <div class="project-card featured">
+                            <div>
+                                <div class="project-title">
+                                    Autonomous AI Support & Ticketing
+                                    <span style="font-size: 11px; color: var(--accent); font-weight: 700;">Live at LimoHost</span>
+                                </div>
+                                <p class="project-desc">
+                                    Intelligent RAG-based ticketing system capable of understanding complex hosting queries and executing automated system diagnostics and resolutions.
+                                </p>
+                            </div>
+                            <div class="project-metrics">
+                                <span class="metric-pill">25% Ticket Reduction</span>
+                                <span class="metric-pill">Real-time Resolution</span>
+                                <span class="metric-pill">Hybrid Indexing</span>
+                            </div>
+                        </div>
+
+                        <!-- Telegram Bot -->
+                        <div class="project-card">
+                            <div>
+                                <div class="project-title">
+                                    Telegram Pixel Art Collaborative Bot
+                                </div>
+                                <p class="project-desc">
+                                    Real-time interactive bot enabling thousands of Telegram users to collaborate on a shared canvas by placing colored pixels at intervals.
+                                </p>
+                            </div>
+                            <div class="project-metrics">
+                                <span class="metric-pill" style="background: #f1f5f9; border-color: #cbd5e1; color: #475569;">Real-time Canvas</span>
+                                <span class="metric-pill" style="background: #f1f5f9; border-color: #cbd5e1; color: #475569;">High Concurrency</span>
+                            </div>
+                        </div>
+
+                        <!-- Bit20 Campaign -->
+                        <div class="project-card">
+                            <div>
+                                <div class="project-title">
+                                    Bit20 Crypto Exchange Campaign
+                                    <a href="https://20bash.bistbit.com" target="_blank">
+                                        View
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                                <p class="project-desc">
+                                    High-traffic promotional campaign platform integrated securely with cryptocurrency exchange user verification and real-time reward allocation.
+                                </p>
+                            </div>
+                            <div class="project-metrics">
+                                <span class="metric-pill" style="background: #f1f5f9; border-color: #cbd5e1; color: #475569;">High Traffic</span>
+                                <span class="metric-pill" style="background: #f1f5f9; border-color: #cbd5e1; color: #475569;">Fintech Integration</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+
     </div>
-    
-    <h1>Mohammad Javad Azimi</h1>
-    <p style="text-align: center; font-weight: bold; margin-bottom: 10px;">Web Programmer</p>
-    <div class="contact">
-        <strong>Email:</strong> joorjin2@gmail.com | <strong>Mobile:</strong> (+98) 9150567825 |
-        <strong>Address:</strong> Khorasan Razavi, Mashhad, Abdolmotalleb<br>
-        <strong>Birth Date:</strong> November 4, 2001 | <strong>Marital Status:</strong> Single
-    </div>
 
-    <h2>Professional Summary</h2>
-    <p>Web programmer with five years of experience in development and optimization of PHP and Laravel-based systems.
-        Specialist in implementing Docker and Linux infrastructure. Effective team player, familiar with Scrum
-        methodology and deep understanding of organizational culture. Always seeking new opportunities to learn and
-        apply new technologies.</p>
-
-    <h2>Skills</h2>
-    <ul>
-        <li>Laravel Framework</li>
-        <li>Linux</li>
-        <li>Git</li>
-        <li>jQuery</li>
-        <li>WHMCS</li>
-        <li>MySQL</li>
-        <li>PostgreSQL</li>
-        <li>Bootstrap</li>
-        <li>RESTful Web Service Design</li>
-        <li>Docker</li>
-        <li>Python</li>
-        <li>Flask</li>
-        <li>Redis</li>
-        <li>Memcached</li>
-        <li>Vue.js</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>Database Optimization (MySQL & PostgreSQL)</li>
-    </ul>
-
-    <h2>Work Experience</h2>
-    <h3>Senior PHP Programmer</h3>
-    <p><em>Limo Host, Khorasan Razavi, Mashhad | November 2023 - Present</em></p>
-    <ul>
-        <li>Development and optimization of PHP, Laravel, and WHMCS-based systems</li>
-        <li>Implementation and improvement of Docker and Linux infrastructure</li>
-        <li>Working with artificial intelligence (AI) and Ollama for natural language processing</li>
-        <li>Design and implementation of a Flask-based RAG system with hybrid indexing for intelligent Q&A</li>
-        <li>Development and management of Next.js and React.js-based projects</li>
-        <li>Working with Golang in various software sections</li>
-        <li><a href="https://limoo.host">https://limoo.host</a></li>
-    </ul>
-
-    <h3>Backend Development Consultant</h3>
-    <p><em>Amlek Plus, Khorasan Razavi, Mashhad | January 2025 - March 2025</em></p>
-    <ul>
-        <li>Consulting on data transfer and change using artificial intelligence and data processing for building new
-            systems</li>
-    </ul>
-
-    <h3>Infrastructure Development Consultant</h3>
-    <p><em>Telefon Chi, Khorasan Razavi, Mashhad | May 2024 - July 2024</em></p>
-    <ul>
-        <li>Transferring services to Docker and developing CI/CD automation</li>
-        <li>Creating local Rocket.Chat and Jira systems</li>
-        <li>Analyzing infrastructure needs and providing optimal solutions to improve system performance</li>
-        <li>Managing infrastructure development projects with precise scheduling and budgeting</li>
-        <li>Collaborating with technical teams in designing and implementing communication networks and information
-            systems</li>
-        <li>Training and guiding employees in the optimal use of new infrastructure systems</li>
-    </ul>
-
-    <h3>PHP Backend Programmer</h3>
-    <p><em>Iran Server (Green Web), Khorasan Razavi, Mashhad | February 2022 - December 2022</em></p>
-    <ul>
-        <li>Server-side programming and product development</li>
-        <li>Maintaining a website builder</li>
-        <li>Working with microservices on Hetzner servers and support</li>
-        <li><a href="https://www.iranserver.com">https://www.iranserver.com</a></li>
-    </ul>
-
-    <h3>Senior Backend Programmer</h3>
-    <p><em>Oping Cloud, Khorasan Razavi, Mashhad | January 2024 - Present</em></p>
-    <ul>
-        <li>Development and optimization of PHP, Laravel, and WHMCS-based systems</li>
-        <li>Design and implementation of RESTful APIs</li>
-        <li>Working with artificial intelligence (AI) and Ollama in natural language processing</li>
-        <li>Management and optimization of Docker and Linux infrastructure</li>
-        <li>Development and maintenance of Next.js and React.js-based projects</li>
-        <li>Using Golang in various software sections</li>
-        <li><a href="https://oping.cloud">https://oping.cloud</a></li>
-    </ul>
-
-    <h3>PHP Programmer</h3>
-    <p><em>Nobaan, Khorasan Razavi, Mashhad | May 2023 - November 2023</em></p>
-    <ul>
-        <li>Development and maintenance of internal systems and commercial products</li>
-        <li>Rewriting and updating systems</li>
-        <li>Design and implementation of databases for e-commerce systems</li>
-        <li>Development and support of content management systems using PHP</li>
-        <li>Transfer and rewriting of old backend code from PHP to NestJS</li>
-        <li><a href="https://nobaan.com">https://nobaan.com</a></li>
-
-    </ul>
-
-    <h3>Laravel Programming</h3>
-    <p><em>Tose'e Tejarat Dorna (Education Ministry), Khorasan Razavi, Mashhad | March 2023 - May 2023</em></p>
-    <ul>
-        <li>Development and implementation of RESTful APIs using Laravel and integration with external services</li>
-    </ul>
-
-    <h3>Laravel Programmer</h3>
-    <p><em>Raya Ertebatat Kish, Khorasan Razavi, Mashhad | March 2020 - January 2022</em></p>
-    <ul>
-        <li>PHP Laravel programming</li>
-        <li><a href="http://rek.co.ir/">http://rek.co.ir/</a></li>
-    </ul>
-
-    <h3>PHP Programmer</h3>
-    <p><em>BasketAsia (A Hosting in Malaysia), Malaysia | March 2023 - Present</em></p>
-    <ul>
-        <li>Development of a WHMCS module along with a dedicated service</li>
-        <li><a href="https://www.basketasia.com/">https://www.basketasia.com/</a></li>
-    </ul>
-
-    <h3>PHP Programmer</h3>
-    <p><em>Net Afraz, Isfahan | June 2023 - June 2023</em></p>
-    <ul>
-        <li>Development of WHMCS module and an internal service</li>
-    </ul>
-
-    <h2>Projects</h2>
-    <h3>Nowruz Campaign</h3>
-    <p><em>Client/Requestor: Bit20 Exchange | March 2022</em></p>
-    <ul>
-        <li>Project campaign for Bit20 Exchange</li>
-        <li>Related link: <a href="https://20bash.bistbit.com">https://20bash.bistbit.com</a></li>
-    </ul>
-
-    <h3>Telegram Pixel Art Bot</h3>
-    <p><em>Interactive Telegram Bot | Ongoing</em></p>
-    <ul>
-        <li>Developed a Telegram bot allowing users to color one pixel on a shared canvas every few minutes, enabling
-            collaborative pixel art creation.</li>
-    </ul>
-
-    <h3>AI-Powered Automated Ticketing System</h3>
-    <p><em>Intelligent Support Platform | Recent</em></p>
-    <ul>
-        <li>Built an AI-driven ticketing system with deep business knowledge comprehension, capable of autonomously
-            performing actions on the system to resolve user issues.</li>
-    </ul>
-
-    <h3>Boometo AI Image Generator</h3>
-    <p><em>AI Platform for Text-to-Image | Live</em></p>
-    <ul>
-        <li>Created a Persian-English AI platform for generating high-quality images from text prompts, featuring 50+
-            art styles, 4K resolution, personal galleries, and web design tools like logos and banners.</li>
-        <li>Related link: <a href="https://boometo.com/">https://boometo.com/</a></li>
-    </ul>
-
-    <h2>Education</h2>
-    <ul>
-        <li><strong>Bachelor's in Computer Engineering</strong><br>Institute/University: Tus Non-Profit</li>
-    </ul>
-
-    <h2>Social Networks</h2>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/mohammadjavadazimi">LinkedIn:
-                www.linkedin.com/in/mohammadjavadazimi</a></li>
-        <li><a href="https://github.com/mj-azimi">GitHub: https://github.com/mj-azimi</a></li>
-    </ul>
 </body>
 
 </html>
