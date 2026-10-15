@@ -8,13 +8,14 @@
 ---
 
 ## Professional Summary
-Senior Software Engineer with **5+ years of hands-on experience** architecting high-load hosting platforms, microservices, and cloud systems. Deep expertise in backend engineering with **PHP/Laravel**, **Golang**, and **Python**, combined with extensive experience in **Linux server administration**, **Docker** containerization, and **CI/CD** automation. Pioneer in **Vibe Coding** and modern AI engineering workflows, deploying production-grade RAG systems and local LLMs (Ollama) that delivered tangible business results (including a **25% reduction in support ticket volume at LimoHost**).
+Senior Software Engineer with **5+ years of hands-on experience** architecting high-load hosting platforms, microservices, and cloud systems. Specialized in **PHP/Laravel** backend engineering, **Linux server administration**, **Docker** containerization, and **CI/CD** automation, with **practical working knowledge of Python and Golang**. Experienced in **Vibe Coding** and modern AI engineering workflows, deploying production-grade RAG systems and local LLMs (Ollama) that delivered tangible business results (including a **25% reduction in support ticket volume at LimoHost**).
 
 ---
 
 ## Technical Skills
 
-- **Backend & Architecture:** PHP, Laravel, Golang, Python (Flask), NestJS, RESTful APIs, Microservices, WHMCS Architecture, Clean Architecture
+- **Core Backend & Architecture:** PHP (Primary), Laravel, RESTful APIs, Microservices, WHMCS Architecture, Clean Architecture
+- **Working Knowledge & Secondary:** Python (Flask), Golang, NestJS
 - **Server, Infrastructure & DevOps:** Linux Server Administration, Docker, Docker Compose, CI/CD Automation, Hetzner Cloud, Git / GitHub, Server Hardening & Security
 - **Databases & Caching:** MySQL, PostgreSQL, Redis, Memcached, Query Optimization, Database Indexing
 - **AI & Modern Workflows:** Vibe Coding, AI-Driven Development, RAG (Retrieval-Augmented Generation), Local LLMs (Ollama), Hybrid Indexing & Search
@@ -29,13 +30,13 @@ Senior Software Engineer with **5+ years of hands-on experience** architecting h
 - **Achieved a 25% reduction in customer support ticket volume** by designing and implementing an autonomous AI support ticketing system powered by RAG (Hybrid Indexing, Python/Flask, and Ollama) with deep domain comprehension of hosting issues.
 - Engineered, refactored, and maintained core hosting infrastructure modules and business logic using PHP, Laravel, and WHMCS.
 - **Linux Server Administration & Docker Infrastructure:** Containerized critical microservices, hardened server environments, and ensured high system reliability and uptime across high-load hosting environments.
-- Developed high-performance microservices with **Golang** for latency-sensitive processes.
+- Utilized **Golang** for select processing routines, and **Python (Flask)** for core RAG engine implementation.
 - Built and maintained user-facing dashboards using **React.js** and **Next.js**.
 - Link: [https://limoo.host](https://limoo.host)
 
 ### Senior Backend Developer
 *_Oping Cloud, Mashhad, Iran | Part-Time | January 2024 – Present_*
-- Designed scalable RESTful APIs with Laravel and leveraged **Golang** for computational workloads.
+- Designed scalable RESTful APIs with Laravel, with practical implementation of **Golang** in select processing services.
 - Integrated local LLM workflows using **Ollama** for automated natural language processing.
 - Administered Linux servers, optimized Docker environments, and streamlined container deployment pipelines.
 - Developed and maintained responsive web dashboards using **React.js** and **Next.js**.
